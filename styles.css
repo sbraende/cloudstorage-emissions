@@ -1,0 +1,54 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgb(150, 198, 150);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background: rgb(255, 221, 192);
+    padding: 20px 20px 40px 20px;
+}
+
+#earth-img {
+    width: 200px;
+    height: 200px;
+}
+
+#hero-section{
+    display: flex;
+    gap: 40px;
+}
+
+#inputfield {
+    display: flex;
+}
+
+#storage-input, #storage-btn {
+    font-size: large;
+    gap: 0px;
+    margin: 0px;
+    padding: 10px 20px;
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
+#storage-btn{
+
+}
+
+.error {
+    color: red;
+}
+
+.info {
+    font-weight: bold;
+}
+
+footer {
+    height: 100px;
+    background: rgb(150, 198, 150);
+    padding: 20px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cloud storage pollution calc</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <main>
+            <!-- Title -->
+            <div>
+                <h1>Carbon Footprint of <br> Cloud Storage</h1>
+            </div>
+
+            <!-- Hero-section -->
+            <div id="hero-section">
+
+                <!-- Calculator column -->
+                <div id="calc">
+                    <div>
+                        <p>Type in how much cloud storage space your using</p>
+                        <div id="inputfield">
+                            <input id="storage-input" type="text" placeholder="Storage GB">
+                            <button id="storage-btn" onclick="Calculate()">Go</button>
+                        </div>
+                        <p class="error" id="numbersOnly"></p>
+                        <p>Have you remembered your iCloud, OneDrive, Google Drive, Dropbox?</p>
+                    </div>
+                </div>
+
+                <!-- Earth column -->
+                <div id="earth">
+                    <img id="earth-img" src="/assets/images/earth.svg" alt="Illustration of a globe"></img>
+                </div>
+
+                <!-- Info column -->
+                <div id="info">
+                    <p>You CO2 emissions for cloud storage is:</p>
+                    <p id="Co2"><span class="info" id="Co2-tons">0</span> kg of Co2 *</p>
+                        
+                    <p>This is the same as driving a petrol car</p> 
+                    <p><span class="info" id="distance">0</span> km per year **</p>
+                    <p>Or the same as driving <span class="info" id="earthCircumference">0</span> times around earth per year</p>
+                </div>
+            </div> 
+       </main> 
+       <footer>
+            <h2>References</h2>
+            <p>
+                * According to a study by Carnegie Mellon University in 2017, 
+                the transfer and storage of 1 GB of data consume 7kW/h of energy. 
+                (Studies taking into account the standard energy sources in the
+                 USA claim that every 100 GB of data stored in the cloud equals
+                  0.2 tons of CO2 emission).
+            </p>
+            <p>https://stanfordmag.org/contents/carbon-and-the-cloud</p>
+            <p>https://www.aceee.org/files/proceedings/2012/data/papers/0193-000409.pdf</p>
+            <p>** https://ourworldindata.org/travel-carbon-footprint</p>
+       </footer>
+    </body>
+    <script src="/index.js"></script>
+</html>
